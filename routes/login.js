@@ -3,7 +3,7 @@ var knex = require('../db/knex.js');
 var bcrypt = require('bcrypt');
 
 function logIn(req, res, next) {
-  knex('players')
+  knex('users')
     .select()
     .where('email', req.body.email)
     .then(function(userData) {

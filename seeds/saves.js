@@ -6,15 +6,15 @@ exports.seed = function(knex, Promise) {
 
     // Inserts seed entries
     knex('saves').insert({
-      user_id: 3,
+      email: 'pantsguy@pants.com',
       city: 'Porto',
       country: 'Portugal'}),
     knex('saves').insert({
-      user_id: 3,
+      email: 'pantsguy@pants.com',
       city: 'Nice',
       country: 'France'}),
     knex('saves').insert({
-      user_id: 3,
+      email: 'pantsguy@pants.com',
       city: 'Tokyo',
       country: 'Japan'})
   );
