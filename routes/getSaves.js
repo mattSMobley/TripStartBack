@@ -6,7 +6,7 @@ var knex = require('../db/knex');
 function getSaves(req, res, next){
   knex('saves')
   .select()
-  .where('email', req.body.email)
+  .where('email', 'pantsguy@pants.com')
   .then(function (saves){
     res.send(saves)
   }).catch(function (err){
