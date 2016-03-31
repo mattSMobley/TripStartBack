@@ -15,7 +15,15 @@ exports.seed = function(knex, Promise) {
       country: 'France'}),
     knex('saves').insert({
       email: 'pantsguy@pants.com',
-      city: 'Tokyo',
+      city: 'Valencia',
+      country: 'Spain'}),
+    knex('saves').insert({
+      email: 'pantsguy@pants.com',
+      city: 'Ljubljana',
+      country: 'Slovenia'}),
+    knex('saves').insert({
+      email: 'pantsguy@pants.com',
+      city: 'Kyoto',
       country: 'Japan'})
   );
 };
